@@ -85,3 +85,26 @@ public class Class3 {
 	}*/
 	}
 }
+6   int unit,num1,num2;
+    System.out.println("enter num");
+    unit = scan.nextInt();
+    if((unit>0)&&(unit<10))
+    	System.out.println(unit*1.2);
+     else  if(unit>10 && unit<54) 
+     {    
+	    num1 = unit/10;
+	    num2 = unit%10;
+	    System.out.println((num1*10)+(num2 *1.2));
+     }
+     else if(unit==10) 
+        System.out.println(10);
+     else if(unit==54)	
+    	System.out.println(50);
+     else if((unit<108)&&(unit>54)) 
+     {
+        num1 = ((unit-54)/10);
+        num2 = (unit-54)%10;
+        System.out.println(50+(num1*10)+(num2 *1.2));
+     }
+     else if(unit==108) 
+       	System.out.println(100);
